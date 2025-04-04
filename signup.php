@@ -49,8 +49,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $newUserLine = "$name|$age|$password\n";
         file_put_contents($usersFile, $newUserLine, FILE_APPEND);
         
-        // 🚀 Redirect to game.php after successful signup
-        header("Location: game.php");
+        //go to game.php
+        header("Location: game_board.php");
         exit();
     }
 

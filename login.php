@@ -23,8 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         if ($found) {
-            // ✅ Redirect to game.php
-            header("Location: game.php");
+            // go to game.php
+            header("Location: game_board.php");
             exit();
         } else {
             $error = "Invalid username or password.";
